@@ -1,0 +1,143 @@
+<style>
+  /* ===== TABLE BASE STYLES ===== */
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  .comparison-table th,
+  .comparison-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+
+  /* ===== COLUMN BACKGROUNDS & COLORS ===== */
+  /* Left column (Category) - white background */
+  .comparison-table thead th:first-child,
+  .comparison-table tbody td:first-child {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    width: 37.5%; /* adjust as needed */
+  }
+
+  /* Middle column (Regular Car Wash) - dark navy */
+  .comparison-table thead th:nth-child(2),
+  .comparison-table tbody td:nth-child(2) {
+    background-color: #2C3E50; /* dark navy */
+    color: #fff;
+    width: 37.5%; /* adjust as needed */
+  }
+
+  /* Right column (Our Hand Wash) - lighter blue */
+  .comparison-table thead th:nth-child(3),
+  .comparison-table tbody td:nth-child(3) {
+    background-color: #1887D7; /* lighter blue */
+    color: #fff;
+    width: 37.5%; /* adjust as needed */
+  }
+
+  /* ===== RESPONSIVE (MOBILE) STYLES ===== */
+  @media (max-width: 768px) {
+    /* Hide the table header on mobile */
+    .comparison-table thead {
+      display: none;
+    }
+
+    /* Make each row act like its own "block" */
+    .comparison-table tbody tr {
+      display: block;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc; /* optional for clarity */
+    }
+
+    /* Each cell now goes full width */
+    .comparison-table tbody td {
+      display: block;
+      width: 100%;
+    }
+
+    /* Use pseudo-elements to label each cell, 
+       since the <thead> is hidden on mobile */
+    .comparison-table tbody td:first-child::before {
+      font-weight: bold;
+      display: inline;
+    }
+    .comparison-table tbody td:nth-child(2)::before {
+      content: "Regular Car Wash: ";
+      font-weight: bold;
+      display: inline;
+    }
+    .comparison-table tbody td:nth-child(3)::before {
+      content: "Our Hand Wash: ";
+      font-weight: bold;
+      display: inline;
+    }
+     .comparison-table thead th:nth-child(3),
+  .comparison-table tbody td:nth-child(3) {
+    width:95%;
+  )
+  .comparison-table thead th:nth-child(2),
+  .comparison-table tbody td:nth-child(2) {
+    width:95%;
+  )
+  .comparison-table thead th:nth-child(1),
+  .comparison-table tbody td:nth-child(1) {
+    width:95%;
+  )
+  }
+</style>
+
+<table class="comparison-table">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Regular Car Wash</th>
+      <th>Our Hand Wash</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Carbon Footprint</td>
+      <td>Up to 120 gallons of water per wash</td>
+      <td>Only 5 gallons of water per wash</td>
+    </tr>
+    <tr>
+      <td>Safety</td>
+      <td>Scratches and damages car paint</td>
+      <td>Lubricated car wash without scratching</td>
+    </tr>
+    <tr>
+      <td>Ease of Use</td>
+      <td>Customers have to drive and wait</td>
+      <td>We come to your home or office</td>
+    </tr>
+    <tr>
+      <td>Scheduling</td>
+      <td>First come first serve, waiting in line</td>
+      <td>Easy booking online or by phone</td>
+    </tr>
+    <tr>
+      <td>Quality</td>
+      <td>Average service and quality of work</td>
+      <td>5 star service and 100% satisfaction</td>
+    </tr>
+    <tr>
+      <td>Chemicals</td>
+      <td>Uses harmful chemicals and pollutants</td>
+      <td>Eco-friendly car wash and biodegradable</td>
+    </tr>
+    <tr>
+      <td>Products</td>
+      <td>Cheap product bought in bulk</td>
+      <td>Highest quality car products and tools</td>
+    </tr>
+    <tr>
+      <td>Towels Used</td>
+      <td>Re-used microfiber towels</td>
+      <td>Brand new microfibers for every wash</td>
+    </tr>
+  </tbody>
+</table>
